@@ -1,0 +1,23 @@
+/*universal styling*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*body styling*/
+body{
+    min-height: 100vh;
+    min-width: 100%;
+}
+.square{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+}
+.hide{
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    border: 4px solid rgb(137, 20, 20);
+}
+
