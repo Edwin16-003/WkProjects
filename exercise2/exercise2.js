@@ -58,8 +58,22 @@ class School{
        this.mark =score;
     }
     getAverage(){
-
-    }
+       let avg =this.mark;
+       let totalAvg = avg.reduce((acc,current) => acc + current,0)/4;
+       if(totalAvg > 80 && totalAvg <= 100){
+            console.log(totalAvg);
+            console.log("Grade A")
+        }else if(totalAvg > 60 && totalAvg <= 79){
+            console.log(totalAvg);
+            console.log("Grade B");
+        }else if(totalAvg > 50 && totalAvg <= 69){
+            console.log(totalAvg);
+            console.log("Grade C");
+        }else{
+            console.log(totalAvg);
+            console.log("Grade D");
+        }
+    }/*
     getGrade(){
         if(this.mark > 80 && this.mark <= 100){
             console.log("Grade A")
@@ -70,10 +84,13 @@ class School{
         }else{
             console.log("Grade D");
         }
-    }
+    }*/
 }
-let obj4 =new School("Mark",60);
-let obj5 =new School("Mercy",70);
-let obj6 =new School("Job",80);
-let obj7 =new School("Chao",50);
-console.log(obj4.getGrade());
+let obj4 =new School("Mark",[50,74,60,85]);
+let obj5 =new School("Mercy",[70,55,40,50]);
+let obj6 =new School("Job",[30,40,60,40]);
+let obj7 =new School("Chao",[50,70,80,80]);
+obj4.getAverage();
+obj5.getAverage();
+obj6.getAverage();
+obj7.getAverage();
