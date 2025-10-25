@@ -135,3 +135,119 @@ console.log(`Total price for the shopping cart system is:${totalItem}`);
 let messyText ="customer: John Doe, Email: john.doe@gmail.com, Phone: +254-712-345678";
 let cleanTxt1 = messyText.search(/"customer: John Doe"/g);
 console.log(cleanTxt1);
+//js review
+//datatypes
+//string
+let nickname ="edu";
+//string methods
+let othername ="p";
+//concat
+console.log("i am " + nickname + " and " + othername);
+console.log(`I am ${nickname} and my othername is ${othername}`);
+console.log(nickname.toLocaleUpperCase());
+//other methods are toLowerCase,trim,replace,search,include,match toString e.t.c
+//number
+let num = 300;
+//number methods
+console.log(num + 10);
+//other methods number,isSafeInteger,float ,fixed,parseInt,parseFloat
+//javascript operations
+//arithmetic ,logical,compound,assignment,comparision(equality and relational),increment and decreament e.t.c
+//non-primitive datatypes
+//objects
+const libray ={
+    title:"javascript",
+    author:"Charles",
+    pages:500
+};
+//object methods
+//accessing property keys
+console.log(libray.title);
+console.log(libray["author"]);
+//adding and removing properties in an object 
+console.log(libray.date="20/03/1900");
+console.log(delete libray.pages);
+//other methods and ways to manipulate the object
+//method ,constructor,object destructuring
+//constructor
+function Car(para1,para2){
+    this.model=para1;
+    this.engine =para2;
+    //method
+    getDescription(){
+        console.log(`this is my car description: the model is ${this.model} and engine type is ${this.engine}`);
+    }
+}
+//accessing property keys
+let myCar =new Car("V8",500);
+//call method
+myCar.getDescription();
+//object destructuring
+//destructure the libray object
+//access all the property keys
+console.log({title,author,date} = libray);
+//arrays
+const digits =[10,20,30,40,50];
+//array methods
+console.log(digits);//all
+console.log(digits[0]);//10
+console.log(digits.shift());//delete first element
+console.log(digits.pop());//delete last element
+console.log(digits.push(60));//add elements into an array
+//other splice,sort,reduce,copy,...spread e.t.c
+//helper functions every,from,filter,reduce
+//array destructuring,set,map
+//conditional statements
+if(){
+
+}else if(){
+
+}else{
+
+}
+switch (key) {
+    case value:
+        
+        break;
+
+    default:
+        break;
+}
+//loop
+//while,do while,for,for...of,for...in loop
+//for loop
+for(let i =0;i<5;i++){
+    console.log(i);
+}
+//for...of loop in arrays
+const marks= [1,2,3,4,5];
+for(const keys of marks){
+    console.log(keys);
+}
+//for...in loop in objects
+const data ={
+    name:"database",
+    storage:20
+};
+for(const lists in data){
+    console.log(lists);
+}
+//regular expression(validation and search)
+//Javascript rules and guidelines
+//functions
+//function declaration
+//function expression
+//IIFE function
+//arrow function
+//anonymous functions
+//callbacks
+//promises
+//asynchronouse javascript
+//execution context
+//javascript closures
+//javascript scope
+//javascript this keyword
+//classes
+
+
+
