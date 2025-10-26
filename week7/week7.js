@@ -197,22 +197,7 @@ console.log(digits.push(60));//add elements into an array
 //other splice,sort,reduce,copy,...spread e.t.c
 //helper functions every,from,filter,reduce
 //array destructuring,set,map
-//conditional statements
-if(){
-
-}else if(){
-
-}else{
-
-}
-switch (key) {
-    case value:
-        
-        break;
-
-    default:
-        break;
-}
+//conditional statements if,else if,else and switch
 //loop
 //while,do while,for,for...of,for...in loop
 //for loop
@@ -232,17 +217,33 @@ const data ={
 for(const lists in data){
     console.log(lists);
 }
-//regular expression(validation and search)
+//regular expression(text validation and search)
 //Javascript rules and guidelines
+//use of camelCase,semicolon,,keywords,variable declaration,hoisting
 //functions
 //function declaration
+function funcName(/*parameter*/){/*code to be executed*/}
 //function expression
+let myFunc =funcName(/*parameter*/){/*code to be executed*/};
 //IIFE function
 //arrow function
+(/*parameter*/)=>{/*code to be executed*/};
 //anonymous functions
+let myFun =funcName(/*parameter*/){ /*code to be executed*/};
 //callbacks
+//passing another function as an argument
+let getGrade =function graded(){};//anonymous
+function main(){}//normal function
+//call a function
+main(getGrade);//passing a function as an argument
 //promises
-//asynchronouse javascript
+//recommended rather than callbacks,got the producing code and consuming code
+//execution will continue if the producing code ends with a result
+let prom =new Promise();//producing code
+prom.then();//consuming code
+//asynchronouse javascript,delaying a certain execution for others to finish executing
+setInterval(main,2000);
+setTimeout(getGrade,1000);
 //execution context
 //javascript closures
 //javascript scope

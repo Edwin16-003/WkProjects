@@ -93,3 +93,6 @@ const obj ={
 //display the array from object using destructuring
 const {list} = obj;
 console.log(list);
+//variables
+let myName ="EDWIN";
+console.log(`My name is: ${myName}`);
