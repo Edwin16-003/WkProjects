@@ -245,10 +245,49 @@ prom.then();//consuming code
 setInterval(main,2000);
 setTimeout(getGrade,1000);
 //execution context
+//this is how javascript process of execution is done
+//GEC(creation phase,execution phase)
+//FEC(creation phase,execution phase)
+//memory allocation(stack(primitive values),heap(non-primitive values))
 //javascript closures
+//this is when a main function has a child function and when execution of the main function ends the child function remembers the main function
+//banking system-the balance remains unchanged so every child function uses the balance like a deposit function use the balance and adds up then the withdraw function gets the balance that was used in the deposit function and deduct the amount.(balance - balance + deposit - (balance - withdraw) - balance )
 //javascript scope
+//where a certain code is located(global,block,function)
+//global scope,code is located in the open javascript environment
+//block scope,code is located inside paranthesis like in conditional statements
+//function scope,code is located inside the function
+/*concept-if we declare a variable at the global scope and want to access it using the function the scope mechanism does its work(in the function scope the function starts executing trying to find the variable but it does not find any variable so with the help of scope the execution goes back to the global scope to search for a variable then when it finds and completes it's execution)*/
 //javascript this keyword
+//this is an object document(this === window)
+//this refers to the object itself
 //classes
+class Classy{
+    constructor(arg,ad){
+        this.one=arg;
+        this.two=ad;
+    }
+    gtInn(){}
+}
+let him=new Classy("tree",2);
+him.gtInn();
+//html DOM
+//javascript brings inteructivity to an html page
+//document object model
+//js inteructivity
+//clicking buttons
+//entering data into forms 
+//changing html elements
+//style html with js
+//change attribute
+//html DOM methods
+document.getElementById();//manipulate html element using id attribute
+document.getElementsByClassName();//manipulate html element using class
+document.getElementsByName();
+document.getElementsByTagName();//manipulate html element using element tags
+document.querySelector();//selecting an element
+document.querySelectorAll();//selecting all elements
+//within html elements we can use onclick and addEventListener methods 
 
 
 
