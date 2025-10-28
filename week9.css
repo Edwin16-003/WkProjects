@@ -1,0 +1,11 @@
+.p-container{
+  height: 100px;
+  width: 200px;
+}
+.text{
+  font-size: 20px;
+  color: brown;
+}
+.hide{
+  display: none;
+}

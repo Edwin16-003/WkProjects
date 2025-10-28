@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Week 09</title>
+  <link rel="stylesheet" href="week9.css">
 </head>
 <body id="parent">
   <h2>Change Background color of the page using buttons.</h2>
@@ -13,8 +14,17 @@
   <br><br>
   <h2>Change Background color for a div element</h2>
   <div id="container" class="p-container"></div>
-  <button></button>
-  <button></button>
+  <br><br>
+  <button onclick="changeDcolor1()">Yellow</button>
+  <button onclick="changeDcolor2()">Brown</button>
+  <br><br>
+  <button onclick="random()">RAND NO GENERATOR</button>
+  <p id="randNum"></p>
+  <br>
+  <p id="para" class="text">
+    This paragraph disapears and reappears.
+  </p>
+  <button onclick="disappear()">Click Me!</button>
   <script defer src="week9.js"></script>
 </body>
 </html>
