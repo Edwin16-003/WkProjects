@@ -1,0 +1,12 @@
+/*universal selector*/
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+/*body styling*/
+body{
+  min-height: 100vh;
+  min-width: 100%;
+}
