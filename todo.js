@@ -20,8 +20,7 @@ const randQoutes =[
 ];
 //create a function that generates random qoutes
 function qouteGenerator(array){
-  //loop over an array
-  for(let i=0;i<array.length;i++){
-   document.getElementById("qoute-text").innerHTML = array[i];
-}
+  let randNo =Math.floor(Math.random()*array.length);
+  let convertText =array[randNo];
+  console.log(convertText);
 }
